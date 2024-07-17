@@ -12,12 +12,12 @@ from botocore.exceptions import ClientError
 # Load environment variables from .env file
 load_dotenv()
 # Initialize clients for all bedrock related services
-services = ['bedrock', 'bedrock-agent', 'bedrock-agent-runtime', 'bedrock-runtime']
-for service in services:
-    print(f"Methods for {service}:")
-    client = boto3.client(service)
-    print(dir(client))
-    print("\n")
+# services = ['bedrock', 'bedrock-agent', 'bedrock-agent-runtime', 'bedrock-runtime']
+# for service in services:
+#     print(f"Methods for {service}:")
+#     client = boto3.client(service)
+#     print(dir(client))
+#     print("\n")
 
 # Initialize the bedrock-agent client
 client = boto3.client('bedrock-agent')
