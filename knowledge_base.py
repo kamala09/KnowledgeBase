@@ -52,7 +52,7 @@ def list_all_knowledge_bases():
 # Main function to delete knowledge bases with a specific status
 def delete_knowledge_bases_with_status(status):
     knowledge_bases = list_all_knowledge_bases()
-    print("knowledge_bases", knowledge_bases)
+    # print("knowledge_bases", knowledge_bases)
     for kb in knowledge_bases:
         if kb.get('status') == status:
             delete_knowledge_base(kb.get('knowledgeBaseId'))
